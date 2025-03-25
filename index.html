@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jam_bot Additional Resources</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .text-small-capitalize {
+      font-variant-caps: all-small-caps;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="py-5 px-3 bg-body-secondary text-center">
+      <h1 class="mb-4">The <span class="text-small-capitalize">jam_bot</span>, a Real-Time System for Collaborative Free Improvisation with Music Language Models</h1>
+      <h2>Additional Resources</h2>
+    </section>
+
+    <section class="my-5 p-3 text-center">
+        <p>This page documents 5 musical examples of Anon Visiting Artist using the <span class="text-small-capitalize">jam_bot</span>.
+            Every example demonstrates an interaction strategy through a video or audio recording and an excerpt of the training data used to fine-tune the underlying Music Language Model.</p>
+
+    </section>
+
+    <section class="my-5 p-3" id="musical-example-1">
+      <div class="container-fluid">
+        <h3 class="mb-2">Musical Example 1. Progressive Rock Riffs</h3>
+        <p class="fst-italic">This example prompts the model at regular time intervals.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Video from the performance</h4>
+            <video controls class="w-100">
+              <source src="videos/video_progrock.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-6">
+            <h4>Training Data</h4>
+            <div>
+              <midi-player src="midi/midi_prog_rock.mid" sound-font visualizer="#midiViz1" class="w-100"></midi-player>
+              <midi-visualizer src="midi/midi_prog_rock.mid" type="piano-roll" class="midi-visualizer" id="midiViz1"></midi-visualizer>
+            </div>
+            <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #26547c">All notes</span> are played with both hands.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 p-3 bg-body-tertiary" id="musical-example-2">
+      <div class="container-fluid">
+        <h3 class="mb-2">Musical Example 2. Baroque Counterpoints</h3>
+        <p class="fst-italic">This example prompts the model at regular time intervals.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Video from the performance</h4>
+            <video controls class="w-100">
+              <source src="videos/video_baroque.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-6">
+            <h4>Training Data</h4>
+            <div>
+              <midi-player src="midi/midi_baroque.mid" sound-font visualizer="#midiViz2" class="w-100"></midi-player>
+              <midi-visualizer src="midi/midi_baroque.mid" type="piano-roll" class="midi-visualizer" id="midiViz2"></midi-visualizer>
+            </div>
+            <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #26547c">All notes</span> are played with both hands.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 p-3" id="musical-example-3">
+      <div class="container-fluid">
+        <h3 class="mb-2">Musical Example 3. Leads</h3>
+        <p class="fst-italic">This example prompts the model at every musical gesture.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Video from the performance</h4>
+            <video controls class="w-100">
+              <source src="videos/video_leads.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-6">
+            <h4>Training Data</h4>
+            <div>
+              <midi-player src="midi/midi_leads.mid" sound-font visualizer="#midiViz3" class="w-100"></midi-player>
+              <midi-visualizer src="midi/midi_leads.mid" type="piano-roll" class="midi-visualizer" id="midiViz3"></midi-visualizer>
+            </div>
+            <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #06d6a0">Lead (Green)</span> is played with the right hand, while <span style="font-weight: bold; color: #ffd166">Chords (Yellow)</span> are played with the left hand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 p-3 bg-body-tertiary" id="musical-example-4">
+      <div class="container-fluid">
+        <h3 class="mb-2">Musical Example 4. Chords</h3>
+        <p class="fst-italic">This example prompts the model at every musical gesture.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Audio recording</h4>
+            <audio controls class="w-100">
+              <source src="audios/audio_chords.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-lg-6">
+            <h4>Training Data</h4>
+            <div>
+              <midi-player src="midi/midi_chords.mid" sound-font visualizer="#midiViz4" class="w-100"></midi-player>
+              <midi-visualizer src="midi/midi_chords.mid" type="piano-roll" class="midi-visualizer" id="midiViz4"></midi-visualizer>
+            </div>
+            <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #06d6a0">Lead (Green)</span> is played with the right hand, while <span style="font-weight: bold; color: #ffd166">Chords (Yellow)</span> are played with the left hand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 p-3" id="musical-example-5">
+      <div class="container-fluid">
+        <h3 class="mb-2">Musical Example 5. Bass and Chords</h3>
+        <p class="fst-italic">This example prompts the model on request.</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Video from the performance</h4>
+            <video controls class="w-100">
+              <source src="videos/video_bassandchords.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="col-lg-6">
+            <div class="container-fluid">
+              <div class="col-12 mb-5">
+                <h4>Training Data 1</h4>
+                <div>
+                  <midi-player src="midi/midi_bass_and_chords.mid" sound-font visualizer="#midiViz5_1" class="w-100"></midi-player>
+                  <midi-visualizer src="midi/midi_bass_and_chords.mid" type="piano-roll" class="midi-visualizer" id="midiViz5_1"></midi-visualizer>
+                </div>
+                <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #26547c">Conditioning Harmonic Notes (Blue)</span> are played with the right hand, while <span style="font-weight: bold; color: #ef476f">Bass (Red)</span> is played with the left hand.</p>
+              </div>
+              <div class="col-12">
+                <h4>Training Data 2</h4>
+                <div>
+                  <midi-player src="midi/midi_bass_and_chords_2.mid" sound-font visualizer="#midiViz5_2" class="w-100"></midi-player>
+                  <midi-visualizer src="midi/midi_bass_and_chords_2.mid" type="piano-roll" class="midi-visualizer" id="midiViz5_2"></midi-visualizer>
+                </div>
+                <p class="mt-3 fst-italic"><span style="font-weight: bold; color: #ffd166">Chords (Yellow)</span> are played with the right hand, while <span style="font-weight: bold; color: #26547c">Conditioning Root Notes (Blue)</span> are played with the left hand.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Ensure the midi-player and midi-visualizer are responsive */
+    midi-visualizer svg rect.note[data-program="1"]{
+      fill: #26547c;
+    }
+
+    midi-visualizer svg rect.note[data-program="33"]{
+      fill: #ef476f;
+    }
+
+    midi-visualizer svg rect.note[data-program="49"]{
+      fill: #ffd166;
+    }
+
+    midi-visualizer svg rect.note[data-program="81"]{
+      fill: #06d6a0;
+    }
+
+    midi-visualizer svg rect.note {
+        opacity: 0.6;
+    }
+
+    midi-visualizer svg rect.note.active {
+        opacity: 1;
+    }
+  </style>
+</body>
+
+</html>
